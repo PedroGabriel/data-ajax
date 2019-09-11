@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+<script>
+  var callback_ajax$1 = {
+    before:function(form, formData, marca_input, alerta_erro){
+      // formData = Object.toFormData(Object|Array); // transforma algum objeto em formData para enviar no return
+
+      return formData;
+    },
+    sucesso:function(res,form){
+      
+    },
+    erro:function(res,form){
+      
+    },
+    after:function(form){
+      
+    }
+  };
+</script>
+]]></content>
+<tabTrigger>callbackk</tabTrigger>
+</snippet>

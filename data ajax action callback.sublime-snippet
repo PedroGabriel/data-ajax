@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<script>
+  var callback_ajax_action$1 = function(element, data, status){
+
+  };
+</script>
+]]></content>
+<tabTrigger>acallback</tabTrigger>
+</snippet>

@@ -65,34 +65,10 @@ var CONFIG = {
 
 dataajaxcss = (function () {
   var cssHtml = "";
-  cssHtml +=
-    "." +
-    CONFIG.alerta.padrao.classe +
-    "{position: fixed;z-index: 99999;width: 100%;min-height: 40px;line-height: 38px;text-align: center;left: 0px;border: 0px;color: #FFF;font-size: 14px;font-weight: 700;}";
-  cssHtml +=
-    "." +
-    CONFIG.alerta.padrao.classe +
-    "{background-color:" +
-    CONFIG.alerta.padrao.fundo +
-    ";color:" +
-    CONFIG.alerta.padrao.fonte +
-    ";}";
-  cssHtml +=
-    "." +
-    CONFIG.alerta.sucesso.classe +
-    "{background-color:" +
-    CONFIG.alerta.sucesso.fundo +
-    ";color:" +
-    CONFIG.alerta.sucesso.fonte +
-    ";}";
-  cssHtml +=
-    "." +
-    CONFIG.alerta.erro.classe +
-    "{background-color:" +
-    CONFIG.alerta.erro.fundo +
-    ";color:" +
-    CONFIG.alerta.erro.fonte +
-    ";}";
+  cssHtml +="." +CONFIG.alerta.padrao.classe +"{position: fixed;z-index: 99999;width: 100%;min-height: 40px;line-height: 38px;text-align: center;left: 0px;border: 0px;color: #FFF;font-size: 14px;font-weight: 700;}";
+  cssHtml +="." +CONFIG.alerta.padrao.classe +"{background-color:" +CONFIG.alerta.padrao.fundo +";color:" +CONFIG.alerta.padrao.fonte +";}";
+  cssHtml +="." +CONFIG.alerta.sucesso.classe +"{background-color:" +CONFIG.alerta.sucesso.fundo +";color:" +CONFIG.alerta.sucesso.fonte +";}";
+  cssHtml +="." +CONFIG.alerta.erro.classe +"{background-color:" +CONFIG.alerta.erro.fundo +";color:" +CONFIG.alerta.erro.fonte +";}";
   if (CONFIG.sweetalert)
     cssHtml += ".swal2-container.swal2-shown{z-index:99999999}";
   var style = document.createElement("style");
